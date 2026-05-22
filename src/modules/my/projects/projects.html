@@ -1,0 +1,19 @@
+<template>
+    <section class="resume-section">
+        <h2 class="section-heading">Key Projects</h2>
+        <div class="section-rule"></div>
+        <template for:each={projects} for:item="project">
+            <div key={project.id} class="project-item">
+                <div class="project-header">
+                    <p class="project-title">{project.title}</p>
+                    <div class="project-tags">
+                        <template for:each={project.techStack} for:item="tech">
+                            <span key={tech} class="tag">{tech}</span>
+                        </template>
+                    </div>
+                </div>
+                <p class="project-desc">{project.description}</p>
+            </div>
+        </template>
+    </section>
+</template>

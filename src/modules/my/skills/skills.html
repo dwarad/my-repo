@@ -1,0 +1,31 @@
+<template>
+    <div class="skills-container">
+        <!-- Salesforce Column -->
+        <div class="skill-group">
+            <h3 class="skill-category">Salesforce</h3>
+            <div class="skill-list">
+                <template for:each={sfSkills} for:item="skill">
+                    <span key={skill} class="skill-tag">{skill}</span>
+                </template>
+            </div>
+        </div>
+        <!-- Development Column -->
+        <div class="skill-group">
+            <h3 class="skill-category">Development</h3>
+            <div class="skill-list">
+                <template for:each={devSkills} for:item="skill">
+                    <span key={skill} class="skill-tag">{skill}</span>
+                </template>
+            </div>
+        </div>
+        <!-- Tools & DevOps Column -->
+        <div class="skill-group">
+            <h3 class="skill-category">Tools & Processes</h3>
+            <div class="skill-list">
+                <template for:each={toolSkills} for:item="skill">
+                    <span key={skill} class="skill-tag">{skill}</span>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

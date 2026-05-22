@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ============================================
+   SALESFORCE RESUME - GLOBAL STYLES
+   Light blue & white Salesforce-themed design
+   ============================================ */
+
+:root {
+    --sf-blue:       #0070d2;   /* Salesforce classic blue */
+    --sf-blue-light: #e8f4fd;   /* Very light blue background */
+    --sf-blue-mid:   #b3d9f5;   /* Mid blue for accents/dividers */
+    --sf-blue-dark:  #005fb2;   /* Darker blue for headings */
+    --sf-cloud:      #f4f9fe;   /* Almost-white cloud blue */
+    --text-dark:     #1a1a2e;
+    --text-mid:      #3d4f6a;
+    --text-light:    #6b7a93;
+    --white:         #ffffff;
+    --sidebar-bg:    #0070d2;
+    --sidebar-text:  #ffffff;
+    --divider:       #c8e0f4;
+    --font:          'Inter', sans-serif;
+    --shadow:        0 2px 16px rgba(0, 112, 210, 0.10);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font);
+    background: linear-gradient(135deg, var(--sf-blue-light) 0%, var(--white) 60%, var(--sf-blue-light) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.5rem 1rem 4rem;
+    color: var(--text-dark);
+}
+
+/* Resume "paper" container */
+#main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Shared utility */
+.resume-page {
+    width: 100%;
+    max-width: 820px;
+    background: var(--white);
+    box-shadow: var(--shadow), 0 8px 40px rgba(0,112,210,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    min-height: 1100px;
+}
+
+a {
+    color: var(--sf-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

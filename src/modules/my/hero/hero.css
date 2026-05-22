@@ -1,0 +1,29 @@
+:host {
+    display: block;
+}
+
+.resume-section {
+    margin-bottom: 1.75rem;
+}
+
+.section-heading {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--sf-blue);
+    margin-bottom: 0.4rem;
+}
+
+.section-rule {
+    height: 2px;
+    background: linear-gradient(90deg, var(--sf-blue), var(--sf-blue-mid));
+    border-radius: 2px;
+    margin-bottom: 0.9rem;
+}
+
+.summary-text {
+    font-size: 0.88rem;
+    color: var(--text-mid);
+    line-height: 1.7;
+}
